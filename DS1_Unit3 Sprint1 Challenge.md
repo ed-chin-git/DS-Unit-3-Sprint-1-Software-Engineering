@@ -232,7 +232,7 @@ career here, you'll have to answer the following:
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
   
-## An important part of code reviews, besides readability, is clear documentation that explains the use and purpose of each method or function.  Following clear descriptive namimg conventions also helps. 
+## An important part of code reviews, besides checking readability, is looking for clear documentation that explains the use and purpose of each method or function.  Following clear descriptive naming conventions also helps. 
   
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
