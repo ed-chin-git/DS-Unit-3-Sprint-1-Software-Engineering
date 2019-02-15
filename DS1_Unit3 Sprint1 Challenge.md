@@ -238,7 +238,7 @@ career here, you'll have to answer the following:
   slightly different things running on all of them. How could containers help us
   improve this situation?
 
-## Containers can be configured to run different versions of software while running on the same server.  These containers can share dependencies, and can be orchestrated and scaled together.
+## Containers can be configured to run different versions of software while running together on the same server.  These containers can share dependencies, and can be orchestrated and scaled together.
    
 
 ### Part 8 - Turn it in!
