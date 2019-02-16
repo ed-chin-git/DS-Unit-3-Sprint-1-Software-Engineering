@@ -232,7 +232,7 @@ career here, you'll have to answer the following:
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
   
-## An important parts of code reviews to me are checking code readability, looking for clear documentation that explains the use and purpose of each method or function, and checking for clear descriptive method and variable names. 
+## Important parts of code reviews are checking code readability, looking for clear documentation that explains the use and purpose of each method or function, and checking for clear descriptive method and variable names. 
   
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
