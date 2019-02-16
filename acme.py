@@ -1,17 +1,21 @@
+"""
+----------------------------------------------------------------
+            Acme Class Library
+----------------------------------------------------------------    
+"""
 import random
-
-# for x in range(10):
-#  print random.randint(1,101)
 
 
 class Product:
-    """  Product Class
-    """
-    def __init__(self, 
-                 name: str, 
-                 price=int(10), 
-                 weight=int(20), 
+    # __________________________________________
+    #                Product Class
+    # ____________________________________________
+    def __init__(self,
+                 name: str,
+                 price=int(10),
+                 weight=int(20),
                  flammability=float(0.5)):
+        assert name != ""
         self.name = name
         self.price = price
         self.weight = weight
@@ -40,8 +44,9 @@ class Product:
 
 
 class BoxingGlove(Product):
-    """  Product Class
-    """
+    # _________________________________
+    #        BoxingGlove Class
+    # _________________________________
     def __init__(self, name: str):
         Product.__init__(self, name)
         self.weight = int(10)

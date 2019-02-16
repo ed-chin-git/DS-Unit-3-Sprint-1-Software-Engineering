@@ -1,10 +1,11 @@
 """
-    Utility Module for Acme Products
+----------------------------------------------------------------
+                    Acme Reports
+--------------------------------------------------------------
 """
-from collections import defaultdict
-from acme import Product
 import random
-import pandas as pd
+from acme import Product
+
 
 ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
 NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', 'Book']
@@ -26,27 +27,13 @@ def generate_products(size=30):
 
 
 def inventory_report(prod_list):
-    prod_df = pd.DataFrame(prod_list)
-    prod_df.rename(columns={0: 'name',
-                            1: 'price',
-                            2: 'weight',
-                            3: 'flammability'},
-                   inplace=True)
+    # unzip the product list into separate lists for reporting
+    name, price, weight, flammability = zip(*prod_list)
     print('ACME CORPORATION OFFICIAL INVENTORY REPORT')
-    print('Unique Product Names:', len(set(prod_df.name)))
-    print('Average Price:', prod_df.price.mean())
-    print('Average Weight:', prod_df.weight.mean())
-    print('Average flammability:', prod_df.flammability.mean())
-
-
-def inventory_report_new(prod_list):
-    print(prod_list)
-
-    print('ACME CORPORATION OFFICIAL INVENTORY REPORT')
-    # print('Unique Product Names:', len(set(prod_df.name)))
-    # print('Average Price:', prod_df.price.mean())
-    # print('Average Weight:', prod_df.weight.mean())
-    # print('Average flammability:', prod_df.flammability.mean())
+    print('Unique Product Names:', len(set(name)))
+    print('Average Price:', sum(price)/len(price))
+    print('Average Weight:', sum(weight)/len(weight))
+    print('Average flammability:', sum(flammability)/len(flammability))
 
 if __name__ == '__main__':
     inventory_report(generate_products())
