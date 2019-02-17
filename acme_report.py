@@ -10,6 +10,10 @@ from acme import Product
 ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
 NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', 'Book']
 
+# ____________________________________________
+#      Create a list of random products
+# ____________________________________________
+
 
 def generate_products(size=30):
     prod_list = []
@@ -25,6 +29,10 @@ def generate_products(size=30):
                           prod.flammability])
     return prod_list
 
+# ____________________________________________
+#       Print Inventory Report
+# ____________________________________________
+
 
 def inventory_report(prod_list):
     # unzip the product list into separate lists for reporting
@@ -35,5 +43,6 @@ def inventory_report(prod_list):
     print('Average Weight:', sum(weight)/len(weight))
     print('Average flammability:', sum(flammability)/len(flammability))
 
+#  Launched from the command line
 if __name__ == '__main__':
     inventory_report(generate_products())
