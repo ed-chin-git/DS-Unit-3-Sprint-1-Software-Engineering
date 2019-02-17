@@ -57,7 +57,7 @@ class AcmeReportTests(unittest.TestCase):
         names, prices, weights, flammability = zip(*prod_list)
         valid_words = ADJECTIVES + NOUNS
         for name in names:
-            words = name.split() 
+            words = name.split()
             for word in words:
                 self.assertIn(word, valid_words)
 

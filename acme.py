@@ -1,7 +1,7 @@
 """
 ----------------------------------------------------------------
             Acme Class Library
-----------------------------------------------------------------    
+----------------------------------------------------------------
 """
 import random
 
@@ -39,7 +39,7 @@ class Product:
             self.identifier = random.randint(1000000, 9999999)
             return
         except:
-            #  print a simpler clearer error message
+            #  error message
             print(err_msg + "Please try again")
     # ____________________________________________
     #       Methods
